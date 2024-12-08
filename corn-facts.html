@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corn Facts - CornHub</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/facts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="corn-facts.html" class="active">Corn Facts</a>
+        <a href="corn-history.html">History</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="facts-container">
+        <h1>Did You Know?</h1>
+        <button id="newFactBtn" class="fact-button">Draw a New Fact!</button>
+
+        <div class="fact-card-container">
+          <div class="fact-card">
+            <div class="fact-card-inner">
+              <div class="fact-card-front">
+                <img
+                  src="images/corn-icon.png"
+                  alt="Corn Icon"
+                  class="card-icon"
+                />
+              </div>
+              <div class="fact-card-back">
+                <p id="currentFact">Click the button to draw a corn fact!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
