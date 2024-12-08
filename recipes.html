@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes - CornHub</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,104 +22,153 @@
 
     <main>
         <section class="recipes-section">
-            <h1>Delicious Corn Recipes</h1>
-            <p>Explore our favorite corn-based recipes that bring out the rich, sweet, and savory flavors of this amazing ingredient. Whether you're grilling, tossing, or baking, there's something for everyone!</p>
-
-            <!-- Recipe 1: Grilled Barbecued Corn Ribs -->
-            <div class="recipe">
-                <h2>Grilled Barbecued Corn Ribs</h2>
-                <img src="images/corn-recipes2.jpg" alt="Grilled Barbecued Corn Ribs" class="recipe-image">
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>4 large ears of corn</li>
-                    <li>1/4 cup barbecue sauce</li>
-                    <li>1 tablespoon olive oil</li>
-                    <li>Salt and pepper to taste</li>
-                    <li>1/4 cup chopped cilantro (optional)</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ol>
-                    <li>Preheat your grill to medium heat.</li>
-                    <li>Cut the corn into rib-like pieces (about 4-5 ribs per ear of corn).</li>
-                    <li>Brush the corn ribs with olive oil and season with salt and pepper.</li>
-                    <li>Grill the corn ribs for about 10-15 minutes, turning occasionally until charred.</li>
-                    <li>Brush with barbecue sauce during the last few minutes of grilling.</li>
-                    <li>Serve with a sprinkle of chopped cilantro and enjoy!</li>
-                </ol>
+            <div class="page-header">
+                <h1>Delicious Corn Recipes</h1>
+                <p>Explore our favorite corn-based recipes that bring out the rich, sweet, and savory flavors of this amazing ingredient. Whether you're grilling, tossing, or baking, there's something for everyone!</p>
             </div>
 
-            <!-- Recipe 2: Esquites-Inspired Summer Pasta Salad -->
-            <div class="recipe">
-                <h2>Esquites-Inspired Summer Pasta Salad</h2>
-                <img src="images/corn-recipes.jpg" alt="Esquites-Inspired Summer Pasta Salad" class="recipe-image">
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>1 pound pasta (preferably elbow macaroni or penne)</li>
-                    <li>2 cups cooked corn kernels (fresh or frozen)</li>
-                    <li>1/4 cup mayonnaise</li>
-                    <li>1 tablespoon lime juice</li>
-                    <li>1/4 teaspoon chili powder</li>
-                    <li>1/4 cup chopped cilantro</li>
-                    <li>1/4 cup crumbled queso fresco</li>
-                    <li>Salt and pepper to taste</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ol>
-                    <li>Cook the pasta according to package instructions. Drain and set aside to cool.</li>
-                    <li>In a large bowl, combine the pasta, corn, mayonnaise, lime juice, and chili powder.</li>
-                    <li>Stir in cilantro and queso fresco.</li>
-                    <li>Season with salt and pepper to taste and refrigerate for 30 minutes before serving.</li>
-                </ol>
+            <!-- Recipe Carousel -->
+            <div class="recipe-carousel">
+                <button class="carousel-button prev-button">&lt;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <div class="recipe-content">
+                            <div class="recipe-image-wrapper">
+                                <img src="images/corn-recipes2.jpg" alt="Grilled Barbecued Corn Ribs" class="recipe-image">
+                                <div class="recipe-difficulty">Easy</div>
+                                <div class="recipe-time">30 mins</div>
+                            </div>
+                            <div class="recipe">
+                                <h2>Grilled Barbecued Corn Ribs</h2>
+                                <div class="recipe-meta">
+                                    <span class="recipe-servings">🍽️ Serves 4</span>
+                                    <span class="recipe-category">🌽 Main Dish</span>
+                                </div>
+                                <p><strong>Ingredients:</strong></p>
+                                <ul>
+                                    <li>4 large ears of corn</li>
+                                    <li>1/4 cup barbecue sauce</li>
+                                    <li>1 tablespoon olive oil</li>
+                                    <li>Salt and pepper to taste</li>
+                                    <li>1/4 cup chopped cilantro (optional)</li>
+                                </ul>
+                                <p><strong>Instructions:</strong></p>
+                                <ol>
+                                    <li>Preheat your grill to medium heat.</li>
+                                    <li>Cut the corn into rib-like pieces (about 4-5 ribs per ear of corn).</li>
+                                    <li>Brush the corn ribs with olive oil and season with salt and pepper.</li>
+                                    <li>Grill the corn ribs for about 10-15 minutes, turning occasionally until charred.</li>
+                                    <li>Brush with barbecue sauce during the last few minutes of grilling.</li>
+                                    <li>Serve with a sprinkle of chopped cilantro and enjoy!</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="recipe-content">
+                            <div class="recipe-image-wrapper">
+                                <img src="images/corn-recipes.jpg" alt="Esquites-Inspired Summer Pasta Salad" class="recipe-image">
+                                <div class="recipe-difficulty">Medium</div>
+                                <div class="recipe-time">45 mins</div>
+                            </div>
+                            <div class="recipe">
+                                <h2>Esquites-Inspired Summer Pasta Salad</h2>
+                                <div class="recipe-meta">
+                                    <span class="recipe-servings">🍽️ Serves 6</span>
+                                    <span class="recipe-category">🥗 Salad</span>
+                                </div>
+                                <p><strong>Ingredients:</strong></p>
+                                <ul>
+                                    <li>1 pound pasta (preferably elbow macaroni or penne)</li>
+                                    <li>2 cups cooked corn kernels (fresh or frozen)</li>
+                                    <li>1/4 cup mayonnaise</li>
+                                    <li>1 tablespoon lime juice</li>
+                                    <li>1/4 teaspoon chili powder</li>
+                                    <li>1/4 cup chopped cilantro</li>
+                                    <li>1/4 cup crumbled queso fresco</li>
+                                    <li>Salt and pepper to taste</li>
+                                </ul>
+                                <p><strong>Instructions:</strong></p>
+                                <ol>
+                                    <li>Cook the pasta according to package instructions. Drain and set aside to cool.</li>
+                                    <li>In a large bowl, combine the pasta, corn, mayonnaise, lime juice, and chili powder.</li>
+                                    <li>Stir in cilantro and queso fresco.</li>
+                                    <li>Season with salt and pepper to taste and refrigerate for 30 minutes before serving.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="recipe-content">
+                            <div class="recipe-image-wrapper">
+                                <img src="images/corn-recipes1.jpg" alt="Black Bean and Corn Salad" class="recipe-image">
+                                <div class="recipe-difficulty">Easy</div>
+                                <div class="recipe-time">20 mins</div>
+                            </div>
+                            <div class="recipe">
+                                <h2>Black Bean and Corn Salad</h2>
+                                <div class="recipe-meta">
+                                    <span class="recipe-servings">🍽️ Serves 4</span>
+                                    <span class="recipe-category">🥗 Side Dish</span>
+                                </div>
+                                <p><strong>Ingredients:</strong></p>
+                                <ul>
+                                    <li>1 can black beans, drained and rinsed</li>
+                                    <li>2 cups corn kernels (fresh, frozen, or canned)</li>
+                                    <li>1 red bell pepper, diced</li>
+                                    <li>1/4 cup red onion, finely chopped</li>
+                                    <li>1/4 cup fresh cilantro, chopped</li>
+                                    <li>1 tablespoon lime juice</li>
+                                    <li>Salt and pepper to taste</li>
+                                </ul>
+                                <p><strong>Instructions:</strong></p>
+                                <ol>
+                                    <li>In a large bowl, combine black beans, corn, bell pepper, red onion, and cilantro.</li>
+                                    <li>Add lime juice and season with salt and pepper.</li>
+                                    <li>Toss gently and refrigerate for 30 minutes to allow flavors to meld.</li>
+                                    <li>Serve chilled as a side dish or a light lunch!</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="recipe-content">
+                            <div class="recipe-image-wrapper">
+                                <img src="images/corn-recipes3.jpg" alt="Sweet Corn Pudding" class="recipe-image">
+                                <div class="recipe-difficulty">Medium</div>
+                                <div class="recipe-time">50 mins</div>
+                            </div>
+                            <div class="recipe">
+                                <h2>Sweet Corn Pudding</h2>
+                                <div class="recipe-meta">
+                                    <span class="recipe-servings">🍽️ Serves 8</span>
+                                    <span class="recipe-category">🍮 Dessert</span>
+                                </div>
+                                <p><strong>Ingredients:</strong></p>
+                                <ul>
+                                    <li>2 cups fresh or frozen corn kernels</li>
+                                    <li>1/2 cup heavy cream</li>
+                                    <li>1/4 cup sugar</li>
+                                    <li>3 large eggs</li>
+                                    <li>1 tablespoon cornstarch</li>
+                                    <li>1/4 teaspoon salt</li>
+                                    <li>1/4 teaspoon ground cinnamon</li>
+                                    <li>1/2 teaspoon vanilla extract</li>
+                                </ul>
+                                <p><strong>Instructions:</strong></p>
+                                <ol>
+                                    <li>Preheat the oven to 350°F (175°C).</li>
+                                    <li>In a blender, combine corn, heavy cream, sugar, eggs, cornstarch, salt, cinnamon, and vanilla.</li>
+                                    <li>Blend until smooth, then pour the mixture into a greased baking dish.</li>
+                                    <li>Bake for 35-40 minutes, or until set and golden on top.</li>
+                                    <li>Allow to cool slightly before serving as a delicious side dish or dessert!</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next-button">&gt;</button>
             </div>
-
-            <!-- Recipe 3: Black Bean and Corn Salad -->
-            <div class="recipe">
-                <h2>Black Bean and Corn Salad</h2>
-                <img src="images/corn-recipes1.jpg" alt="Black Bean and Corn Salad" class="recipe-image">
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>1 can black beans, drained and rinsed</li>
-                    <li>2 cups corn kernels (fresh, frozen, or canned)</li>
-                    <li>1 red bell pepper, diced</li>
-                    <li>1/4 cup red onion, finely chopped</li>
-                    <li>1/4 cup fresh cilantro, chopped</li>
-                    <li>1 tablespoon lime juice</li>
-                    <li>Salt and pepper to taste</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ol>
-                    <li>In a large bowl, combine black beans, corn, bell pepper, red onion, and cilantro.</li>
-                    <li>Add lime juice and season with salt and pepper.</li>
-                    <li>Toss gently and refrigerate for 30 minutes to allow flavors to meld.</li>
-                    <li>Serve chilled as a side dish or a light lunch!</li>
-                </ol>
-            </div>
-
-            <!-- Recipe 4: Sweet Corn Pudding -->
-            <div class="recipe">
-                <h2>Sweet Corn Pudding</h2>
-                <img src="images/corn-recipes3.jpg" alt="Sweet Corn Pudding" class="recipe-image">
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>2 cups fresh or frozen corn kernels</li>
-                    <li>1/2 cup heavy cream</li>
-                    <li>1/4 cup sugar</li>
-                    <li>3 large eggs</li>
-                    <li>1 tablespoon cornstarch</li>
-                    <li>1/4 teaspoon salt</li>
-                    <li>1/4 teaspoon ground cinnamon</li>
-                    <li>1/2 teaspoon vanilla extract</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ol>
-                    <li>Preheat the oven to 350°F (175°C).</li>
-                    <li>In a blender, combine corn, heavy cream, sugar, eggs, cornstarch, salt, cinnamon, and vanilla.</li>
-                    <li>Blend until smooth, then pour the mixture into a greased baking dish.</li>
-                    <li>Bake for 35-40 minutes, or until set and golden on top.</li>
-                    <li>Allow to cool slightly before serving as a delicious side dish or dessert!</li>
-                </ol>
-            </div>
-
         </section>
     </main>
 </body>
