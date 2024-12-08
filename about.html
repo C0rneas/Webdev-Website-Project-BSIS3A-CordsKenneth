@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About CornHub</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="corn-facts.html">Corn Facts</a>
-            <a href="corn-history.html">History</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="corn-facts.html">Corn Facts</a>
+        <a href="corn-history.html">History</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <main>
-        <section class="about-section">
-            <h1>About CornHub</h1>
-            <p>Welcome to CornHub, your go-to resource for all things corn! Here, we celebrate the rich history, cultural significance, and versatility of corn. Whether you're a foodie, history enthusiast, or just love corn, this is the place for you.</p>
-            
-            <!-- Placeholder for images -->
-            <div class="about-images">
-                <img src="images/corn-field.jpg" alt="Cornfield on a sunny day" class="feature-image">
-                <img src="images/corn-festival.jpg" alt="Corn festival celebration" class="feature-image">
-                <img src="images/corn-plant.jpg" alt="Close-up of a corn plant" class="feature-image">
+      <section class="about-section">
+        <div class="page-header">
+          <h1>About CornHub</h1>
+          <p>
+            Welcome to CornHub, your go-to resource for all things corn! Here,
+            we celebrate the rich history, cultural significance, and
+            versatility of corn. Whether you're a foodie, history enthusiast, or
+            just love corn, this is the place for you.
+          </p>
+        </div>
+
+        <!-- World Map Section -->
+        <div class="world-map-container">
+          <h2>Corn Around the World</h2>
+          <div class="world-map">
+            <!-- USA Marker -->
+            <div class="map-marker usa-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-content">
+                <img src="images/corn-field.jpg" alt="US Corn Fields" />
+                <h3>United States</h3>
+                <p>
+                  Largest corn producer in the world, with vast plantations
+                  across the Corn Belt.
+                </p>
+              </div>
             </div>
 
-            <!-- Placeholder for additional content -->
-            <div class="about-extra">
-                <h2>Our Mission</h2>
-                <p>To provide a fun and educational platform for exploring the wonders of corn, from its humble beginnings to its role in today's world.</p>
-
-                <h2>Why Corn?</h2>
-                <p>Corn is more than just a crop—it's a symbol of growth, community, and sustenance. Discover how it connects us all!</p>
+            <!-- China Marker -->
+            <div class="map-marker china-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-content">
+                <img src="images/corn-plant.jpg" alt="Chinese Corn Plant" />
+                <h3>China</h3>
+                <p>
+                  Second largest consumer of corn globally, with significant
+                  agricultural impact.
+                </p>
+              </div>
             </div>
-        </section>
+
+            <!-- Philippines Marker -->
+            <div class="map-marker philippines-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-content">
+                <img src="images/corn-festival.jpg" alt="Mais Festival" />
+                <h3>Nueva Ecija, Philippines</h3>
+                <p>
+                  Home to the vibrant Mais Festival, celebrating the cultural
+                  significance of corn.
+                </p>
+              </div>
+            </div>
+
+            <img src="images/world-map.png" alt="World Map" class="map-image" />
+          </div>
+        </div>
+
+        <!-- Placeholder for additional content -->
+        <div class="about-extra">
+          <h2>Our Mission</h2>
+          <p>
+            To provide a fun and educational platform for exploring the wonders
+            of corn, from its humble beginnings to its role in today's world.
+          </p>
+
+          <h2>Why Corn?</h2>
+          <p>
+            Corn is more than just a crop—it's a symbol of growth, community,
+            and sustenance. Discover how it connects us all!
+          </p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
