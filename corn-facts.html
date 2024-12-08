@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corn Facts - CornHub</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/facts.js" defer></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="corn-facts.html" class="active">Corn Facts</a>
-            <a href="corn-history.html">History</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="corn-facts.html" class="active">Corn Facts</a>
+        <a href="corn-history.html">History</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <main>
-            <div class="corn-fact">
-                <h1>Did You Know?</h1>
-                <ul>
-                    <li>Corn is grown on every continent except Antarctica.</li>
-                    <li>There are over 3,500 uses for corn products!</li>
-                    <li>Popcorn is a type of corn, and it's the only type that pops.</li>
-                    <li>The average ear of corn has about 800 kernels, arranged in 16 rows.</li>
-                    <li>Corn is a key ingredient in more than 4,000 everyday products, from gasoline to toothpaste.</li>
-                    <li>Corn was first domesticated over 10,000 years ago in southern Mexico.</li>
-                    <li>There are over 5,000 different varieties of corn grown worldwide.</li>
-                    <li>Corn is used to make biofuel, a renewable source of energy.</li>
-                    <li>Corn is often used in the production of high-fructose corn syrup, a common sweetener.</li>
-                    <li>The largest corn-producing country is the United States, followed by China and Brazil.</li>
-                    <li>Corn is a member of the grass family, not a vegetable.</li>
-                    <li>The stalk of corn can grow as tall as 10 feet or more, depending on the variety and growing conditions.</li>
-                    <li>Corn plants can produce up to two ears of corn per stalk.</li>
-                    <li>The husk of corn is sometimes used in making biodegradable packaging materials.</li>
-                    <li>Corn is considered a grain, not a vegetable, even though it is consumed like one.</li>
-                    <li>Indigenous people in the Americas have been cultivating corn for thousands of years.</li>
-                    <li>Corn is used in the production of cornstarch, which is commonly used as a thickening agent in cooking.</li>
-                    <li>Sweet corn is typically harvested while the kernels are still soft and sweet, unlike field corn which is dried for use in products like cornmeal.</li>
-                    <li>Corn plants are pollinated by the wind, making them dependent on strong winds for reproduction.</li>
-                    <li>Some varieties of corn, like blue corn, are naturally high in antioxidants and are used to make tortillas and chips.</li>
-                    <li>Corn syrup, made from corn starch, is a common sweetener used in soft drinks, candies, and other processed foods.</li>
-                    <li>Popcorn kernels can reach temperatures of up to 180°C (356°F) when they pop!</li>
-                    <li>Corn has been genetically modified for various reasons, including increased resistance to pests and improved drought tolerance.</li>
-                    <li>Corn was once considered a sacred plant by many Native American tribes, and it was often grown alongside beans and squash in a planting system known as the "Three Sisters." </li>
-                    <li>The first commercially successful popcorn machine was invented in 1885 by Charles Cretors in Chicago.</li>
-                </ul>
+      <div class="facts-container">
+        <h1>Did You Know?</h1>
+        <button id="newFactBtn" class="fact-button">Draw a New Fact!</button>
+
+        <div class="fact-card-container">
+          <div class="fact-card">
+            <div class="fact-card-inner">
+              <div class="fact-card-front">
+                <img
+                  src="images/corn-icon.png"
+                  alt="Corn Icon"
+                  class="card-icon"
+                />
+              </div>
+              <div class="fact-card-back">
+                <p id="currentFact">Click the button to draw a corn fact!</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
