@@ -3,76 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cornhub - Shucking Good Time!</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fffbe7;
-        }
-        header {
-            background-color: #ffd700;
-            color: #4a3c00;
-            padding: 10px 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 3px solid #daa520;
-        }
-        nav {
-            background-color: #ffcc00;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #4a3c00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #ffd700;
-            border-radius: 5px;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-            color: #4a3c00;
-        }
-    </style>
+    <title>Cornhub - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        Cornhub - Shucking Good Time!
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="header-title">Welcome to Cornhub</h1>
+        <p class="header-tagline">The kernel of all things corn!</p>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#recipes">Recipes</a>
-        <a href="#contact">Contact</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="recipes.html" class="nav-link">Recipes</a>
+            <a href="corn-facts.html" class="nav-link">Corn Facts</a>
+            <a href="corn-history.html" class="nav-link">History</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </ul>
     </nav>
-    <section id="home">
-        <h2>Home</h2>
-        <p></p>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/corn-hero.png" alt="A golden field of corn" class="hero-image">
+        <div class="hero-content">
+            <h2 class="hero-title">Discover the World of Corn</h2>
+            <p class="hero-description">From tasty recipes to fun facts, we've got everything corn-related for you!</p>
+            <a href="recipes.html" class="hero-cta">Explore Recipes</a>
+        </div>
     </section>
-    <section id="about">
-        <h2>About</h2>
-        <p></p>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Explore Our Kernel of Goodness</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <img src="images/corn-recipes.jpg" alt="Delicious corn recipes" class="feature-image">
+                <img src="images/corn-recipes1.jpg" alt="Delicious corn recipes" class="feature-image">
+                <img src="images/corn-recipes2.jpg" alt="Delicious corn recipes" class="feature-image">
+                <img src="images/corn-recipes3.jpg" alt="Delicious corn recipes" class="feature-image">
+                <h3 class="feature-title">Recipes</h3>
+                <p class="feature-description">Discover delicious ways to cook corn in every meal.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/corn-gallery.jpg" alt="Gallery of corn" class="feature-image">
+                <img src="images/corn-gallery1.jpg" alt="Gallery of corn" class="feature-image">
+                <img src="images/corn-gallery2.jpg" alt="Gallery of corn" class="feature-image">
+                <h3 class="feature-title">Gallery</h3>
+                <p class="feature-description">Check out beautiful and funny corn photos.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/corn-history.jpg" alt="Historical corn imagery" class="feature-image">
+                <img src="images/corn-history1.jpg" alt="Historical corn imagery" class="feature-image">
+                <h3 class="feature-title">History</h3>
+                <p class="feature-description">Learn about the rich history of corn around the world.</p>
+            </div>
+        </div>
     </section>
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p></p>
-    </section>
-    <section id="recipes">
-        <h2>Recipes</h2>
-        <p></p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p></p>
-    </section>
+</main>
 </body>
 </html>
